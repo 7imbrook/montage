@@ -14,13 +14,14 @@
 		4CBFBDC617B598FE00E4614D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDC517B598FE00E4614D /* main.m */; };
 		4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDC917B598FE00E4614D /* AppDelegate.m */; };
 		4CBFBDCD17B598FE00E4614D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBFBDCB17B598FE00E4614D /* Main.storyboard */; };
-		4CBFBDD017B598FE00E4614D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDCF17B598FE00E4614D /* ViewController.m */; };
+		4CBFBDD017B598FE00E4614D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDCF17B598FE00E4614D /* MainViewController.m */; };
 		4CBFBDD217B598FE00E4614D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBFBDD117B598FE00E4614D /* Images.xcassets */; };
 		4CBFBDD917B598FE00E4614D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDD817B598FE00E4614D /* XCTest.framework */; };
 		4CBFBDDA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
 		4CBFBDDB17B598FE00E4614D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBD17B598FE00E4614D /* UIKit.framework */; };
 		4CBFBDE317B598FE00E4614D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBFBDE117B598FE00E4614D /* InfoPlist.strings */; };
 		4CBFBDE517B598FE00E4614D /* MontageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDE417B598FE00E4614D /* MontageTests.m */; };
+		4CBFBDF117B59C7900E4614D /* PhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDF017B59C7900E4614D /* PhotoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		4CBFBDC817B598FE00E4614D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CBFBDC917B598FE00E4614D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CBFBDCC17B598FE00E4614D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CBFBDCE17B598FE00E4614D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CBFBDCF17B598FE00E4614D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CBFBDCE17B598FE00E4614D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4CBFBDCF17B598FE00E4614D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4CBFBDD117B598FE00E4614D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CBFBDD717B598FE00E4614D /* MontageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBFBDD817B598FE00E4614D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4CBFBDE017B598FE00E4614D /* MontageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MontageTests-Info.plist"; sourceTree = "<group>"; };
 		4CBFBDE217B598FE00E4614D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CBFBDE417B598FE00E4614D /* MontageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MontageTests.m; sourceTree = "<group>"; };
+		4CBFBDEF17B59C7900E4614D /* PhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoManager.h; sourceTree = "<group>"; };
+		4CBFBDF017B59C7900E4614D /* PhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,11 @@
 		4CBFBDBF17B598FE00E4614D /* Montage */ = {
 			isa = PBXGroup;
 			children = (
+				4CBFBDF317B59FFF00E4614D /* Managers */,
+				4CBFBDEE17B59C5300E4614D /* Controllers */,
 				4CBFBDC817B598FE00E4614D /* AppDelegate.h */,
 				4CBFBDC917B598FE00E4614D /* AppDelegate.m */,
 				4CBFBDCB17B598FE00E4614D /* Main.storyboard */,
-				4CBFBDCE17B598FE00E4614D /* ViewController.h */,
-				4CBFBDCF17B598FE00E4614D /* ViewController.m */,
 				4CBFBDD117B598FE00E4614D /* Images.xcassets */,
 				4CBFBDC017B598FE00E4614D /* Supporting Files */,
 			);
@@ -150,6 +153,32 @@
 				4CBFBDE117B598FE00E4614D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CBFBDEE17B59C5300E4614D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFBDF217B59FF900E4614D /* Main */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4CBFBDF217B59FF900E4614D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFBDCE17B598FE00E4614D /* MainViewController.h */,
+				4CBFBDCF17B598FE00E4614D /* MainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		4CBFBDF317B59FFF00E4614D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFBDEF17B59C7900E4614D /* PhotoManager.h */,
+				4CBFBDF017B59C7900E4614D /* PhotoManager.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +228,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Michael Timbrook";
 				TargetAttributes = {
+					4CBFBDB517B598FE00E4614D = {
+						DevelopmentTeam = NPPGU8UV99;
+					};
 					4CBFBDD617B598FE00E4614D = {
 						TestTargetID = 4CBFBDB517B598FE00E4614D;
 					};
@@ -249,8 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBFBDD017B598FE00E4614D /* ViewController.m in Sources */,
+				4CBFBDD017B598FE00E4614D /* MainViewController.m in Sources */,
 				4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */,
+				4CBFBDF117B59C7900E4614D /* PhotoManager.m in Sources */,
 				4CBFBDC617B598FE00E4614D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Montage/Montage-Prefix.pch";
 				INFOPLIST_FILE = "Montage/Montage-Info.plist";
@@ -387,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Montage/Montage-Prefix.pch";
 				INFOPLIST_FILE = "Montage/Montage-Info.plist";
