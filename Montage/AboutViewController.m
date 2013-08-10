@@ -29,7 +29,7 @@
 
 - (void)handleDoubleTap:(UITapGestureRecognizer *)gesture
 {
-    [self dismissViewControllerAnimated:NO completion:^(void){}];
+    [self dismissViewControllerAnimated:YES completion:^(void){}];
 }
 
 @end

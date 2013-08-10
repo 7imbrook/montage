@@ -26,7 +26,7 @@
                         <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <segue destination="9Xb-RM-Jhe" kind="modal" identifier="toAbout" id="YvT-65-7Hh"/>
+                        <segue destination="9Xb-RM-Jhe" kind="modal" identifier="toAbout" modalTransitionStyle="flipHorizontal" id="YvT-65-7Hh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaC-ue-Snd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="589" y="60"/>
+            <point key="canvasLocation" x="591" y="-8"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
