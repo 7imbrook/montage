@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1E701417B5D7E5006B06AD /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E701317B5D7E5006B06AD /* AboutViewController.m */; };
 		4CBFBDBA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
 		4CBFBDBC17B598FE00E4614D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */; };
 		4CBFBDBE17B598FE00E4614D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBD17B598FE00E4614D /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1E701217B5D7E5006B06AD /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2C1E701317B5D7E5006B06AD /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		4CBFBDB617B598FE00E4614D /* Montage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBFBDB917B598FE00E4614D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				4CBFBDCF17B598FE00E4614D /* ViewController.m */,
 				4CBFBDD117B598FE00E4614D /* Images.xcassets */,
 				4CBFBDC017B598FE00E4614D /* Supporting Files */,
+				2C1E701217B5D7E5006B06AD /* AboutViewController.h */,
+				2C1E701317B5D7E5006B06AD /* AboutViewController.m */,
 			);
 			path = Montage;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				4CBFBDD017B598FE00E4614D /* ViewController.m in Sources */,
 				4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */,
+				2C1E701417B5D7E5006B06AD /* AboutViewController.m in Sources */,
 				4CBFBDC617B598FE00E4614D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +460,7 @@
 				4CBFBDEA17B598FE00E4614D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CBFBDEB17B598FE00E4614D /* Build configuration list for PBXNativeTarget "MontageTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +469,7 @@
 				4CBFBDED17B598FE00E4614D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
