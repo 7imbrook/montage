@@ -8,10 +8,6 @@
 
 #import "AboutViewController.h"
 
-@interface AboutViewController ()
-
-@end
-
 @implementation AboutViewController
 
 - (void)viewDidLoad
@@ -22,14 +18,18 @@
     [self.view addGestureRecognizer:doubleTap];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
+#pragma mark - Gesture Handling
 
 - (void)handleDoubleTap:(UITapGestureRecognizer *)gesture
 {
     [self dismissViewControllerAnimated:YES completion:^(void){}];
+}
+
+#pragma mark - Helpers
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
 @end

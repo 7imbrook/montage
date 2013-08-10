@@ -8,10 +8,6 @@
 
 #import "RootViewController.h"
 
-@interface RootViewController ()
-
-@end
-
 @implementation RootViewController
 
 - (void)viewDidLoad
@@ -22,14 +18,18 @@
     [self.view addGestureRecognizer:doubleTap];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
+#pragma mark - Gesture Handling
 
 - (void)handleDoubleTap:(UITapGestureRecognizer *)gesture
 {
     [self performSegueWithIdentifier:@"toAbout" sender:self];
+}
+
+#pragma mark - Helpers
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
 @end
