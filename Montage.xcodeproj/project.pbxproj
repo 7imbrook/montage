@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C1E701417B5D7E5006B06AD /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E701317B5D7E5006B06AD /* AboutViewController.m */; };
+		2C1E701717B5DA21006B06AD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E701617B5DA21006B06AD /* RootViewController.m */; };
 		4CBFBDBA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
 		4CBFBDBC17B598FE00E4614D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */; };
 		4CBFBDBE17B598FE00E4614D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBD17B598FE00E4614D /* UIKit.framework */; };
@@ -15,7 +16,6 @@
 		4CBFBDC617B598FE00E4614D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDC517B598FE00E4614D /* main.m */; };
 		4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDC917B598FE00E4614D /* AppDelegate.m */; };
 		4CBFBDCD17B598FE00E4614D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBFBDCB17B598FE00E4614D /* Main.storyboard */; };
-		4CBFBDD017B598FE00E4614D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDCF17B598FE00E4614D /* ViewController.m */; };
 		4CBFBDD217B598FE00E4614D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBFBDD117B598FE00E4614D /* Images.xcassets */; };
 		4CBFBDD917B598FE00E4614D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDD817B598FE00E4614D /* XCTest.framework */; };
 		4CBFBDDA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
@@ -37,6 +37,8 @@
 /* Begin PBXFileReference section */
 		2C1E701217B5D7E5006B06AD /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2C1E701317B5D7E5006B06AD /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		2C1E701517B5DA21006B06AD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2C1E701617B5DA21006B06AD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4CBFBDB617B598FE00E4614D /* Montage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBFBDB917B598FE00E4614D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,8 +50,6 @@
 		4CBFBDC817B598FE00E4614D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CBFBDC917B598FE00E4614D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CBFBDCC17B598FE00E4614D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CBFBDCE17B598FE00E4614D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CBFBDCF17B598FE00E4614D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4CBFBDD117B598FE00E4614D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CBFBDD717B598FE00E4614D /* MontageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBFBDD817B598FE00E4614D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -118,12 +118,12 @@
 				4CBFBDC817B598FE00E4614D /* AppDelegate.h */,
 				4CBFBDC917B598FE00E4614D /* AppDelegate.m */,
 				4CBFBDCB17B598FE00E4614D /* Main.storyboard */,
-				4CBFBDCE17B598FE00E4614D /* ViewController.h */,
-				4CBFBDCF17B598FE00E4614D /* ViewController.m */,
 				4CBFBDD117B598FE00E4614D /* Images.xcassets */,
 				4CBFBDC017B598FE00E4614D /* Supporting Files */,
 				2C1E701217B5D7E5006B06AD /* AboutViewController.h */,
 				2C1E701317B5D7E5006B06AD /* AboutViewController.m */,
+				2C1E701517B5DA21006B06AD /* RootViewController.h */,
+				2C1E701617B5DA21006B06AD /* RootViewController.m */,
 			);
 			path = Montage;
 			sourceTree = "<group>";
@@ -254,9 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBFBDD017B598FE00E4614D /* ViewController.m in Sources */,
 				4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */,
 				2C1E701417B5D7E5006B06AD /* AboutViewController.m in Sources */,
+				2C1E701717B5DA21006B06AD /* RootViewController.m in Sources */,
 				4CBFBDC617B598FE00E4614D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
