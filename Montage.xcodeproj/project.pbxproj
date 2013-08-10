@@ -25,6 +25,7 @@
 		4CBFBDFC17B5B40100E4614D /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDFB17B5B40100E4614D /* ImagePickerViewController.m */; };
 		4CBFBDFF17B5B66C00E4614D /* ImagePickerImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDFE17B5B66C00E4614D /* ImagePickerImageCell.m */; };
 		4CBFBE0117B5E0BA00E4614D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBE0017B5E0BA00E4614D /* AssetsLibrary.framework */; };
+		4CBFBE0517B7055B00E4614D /* ImagePickerAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBE0417B7055B00E4614D /* ImagePickerAlbumViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		4CBFBDFD17B5B66C00E4614D /* ImagePickerImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerImageCell.h; sourceTree = "<group>"; };
 		4CBFBDFE17B5B66C00E4614D /* ImagePickerImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerImageCell.m; sourceTree = "<group>"; };
 		4CBFBE0017B5E0BA00E4614D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4CBFBE0317B7055B00E4614D /* ImagePickerAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerAlbumViewController.h; sourceTree = "<group>"; };
+		4CBFBE0417B7055B00E4614D /* ImagePickerAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerAlbumViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 				4CBFBDFB17B5B40100E4614D /* ImagePickerViewController.m */,
 				4CBFBDFD17B5B66C00E4614D /* ImagePickerImageCell.h */,
 				4CBFBDFE17B5B66C00E4614D /* ImagePickerImageCell.m */,
+				4CBFBE0317B7055B00E4614D /* ImagePickerAlbumViewController.h */,
+				4CBFBE0417B7055B00E4614D /* ImagePickerAlbumViewController.m */,
 			);
 			name = ImagePicker;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBFBDD017B598FE00E4614D /* MainViewController.m in Sources */,
+				4CBFBE0517B7055B00E4614D /* ImagePickerAlbumViewController.m in Sources */,
 				4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */,
 				4CBFBDF117B59C7900E4614D /* PhotoManager.m in Sources */,
 				4CBFBDFC17B5B40100E4614D /* ImagePickerViewController.m in Sources */,
