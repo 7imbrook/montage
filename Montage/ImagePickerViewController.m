@@ -30,17 +30,18 @@
     };
     
     void (^failure)(NSError *) = ^(NSError *err) {
-        NSLog(@"Error");
+        NSLog(@"Error in assets library: %@", err);
     };
     
     _library = [ALAssetsLibrary new];
     
-    [_library enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        NSLog(@"%@", group.description);
+    [_library enumerateGroupsWithTypes:ALAssetsGroupAlbum | ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         
-        [group enumerateAssetsUsingBlock:assetEnumerator];
-        
-        [_images reloadData];
+        if (group.numberOfAssets > 0) {
+            NSLog(@"%@", group.description);
+            [group enumerateAssetsUsingBlock:assetEnumerator];
+            [_images reloadData];
+        }
         
     } failureBlock:failure];
 
