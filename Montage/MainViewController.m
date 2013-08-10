@@ -36,11 +36,8 @@
 
 - (void)photoManagerAddPhoto:(UITapGestureRecognizer *)reg
 {
-    UIImagePickerController *imagePicker = [UIImagePickerController new];
-    imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-    imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
-    imagePicker.delegate = _photoManager;
-    [self presentViewController:imagePicker animated:YES completion:nil];
+    [self performSegueWithIdentifier:@"toPhotoPicker" sender:_photoManager];
+    
 }
 
 @end
