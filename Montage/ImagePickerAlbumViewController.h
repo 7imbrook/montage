@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
-@interface ImagePickerAlbumViewController : UIViewController
+@interface ImagePickerAlbumViewController : UIViewController <UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

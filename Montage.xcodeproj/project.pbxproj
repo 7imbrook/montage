@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0654CB17BC31A400A5F979 /* ImagePickerAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */; };
 		4CBFBDBA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
 		4CBFBDBC17B598FE00E4614D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */; };
 		4CBFBDBE17B598FE00E4614D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBD17B598FE00E4614D /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0654C917BC31A400A5F979 /* ImagePickerAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerAlbumCell.h; sourceTree = "<group>"; };
+		4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerAlbumCell.m; sourceTree = "<group>"; };
 		4CBFBDB617B598FE00E4614D /* Montage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBFBDB917B598FE00E4614D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -204,6 +207,8 @@
 				4CBFBDFE17B5B66C00E4614D /* ImagePickerImageCell.m */,
 				4CBFBE0317B7055B00E4614D /* ImagePickerAlbumViewController.h */,
 				4CBFBE0417B7055B00E4614D /* ImagePickerAlbumViewController.m */,
+				4C0654C917BC31A400A5F979 /* ImagePickerAlbumCell.h */,
+				4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */,
 			);
 			name = ImagePicker;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				4CBFBDD017B598FE00E4614D /* MainViewController.m in Sources */,
 				4CBFBE0517B7055B00E4614D /* ImagePickerAlbumViewController.m in Sources */,
 				4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */,
+				4C0654CB17BC31A400A5F979 /* ImagePickerAlbumCell.m in Sources */,
 				4CBFBDF117B59C7900E4614D /* PhotoManager.m in Sources */,
 				4CBFBDFC17B5B40100E4614D /* ImagePickerViewController.m in Sources */,
 				4CBFBDC617B598FE00E4614D /* main.m in Sources */,
@@ -519,6 +525,7 @@
 				4CBFBDEA17B598FE00E4614D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CBFBDEB17B598FE00E4614D /* Build configuration list for PBXNativeTarget "MontageTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +534,7 @@
 				4CBFBDED17B598FE00E4614D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
