@@ -17,8 +17,12 @@
 
 - (void)viewDidLoad
 {
-    
     _images.dataSource = self;
+}
+
+- (void)loadCollectionWithAlbum:(ALAssetsGroup *)album fromLibrary:(ALAssetsLibrary *)lib
+{
+    _library = lib;
     _assets = [NSMutableArray new];
     
     // Setup assets library for getting images
@@ -28,23 +32,13 @@
             return;
         [_assets addObject:result];
     };
-    
-    void (^failure)(NSError *) = ^(NSError *err) {
-        NSLog(@"Error in assets library: %@", err);
-    };
-    
-    _library = [ALAssetsLibrary new];
-    
-    [_library enumerateGroupsWithTypes:ALAssetsGroupAlbum | ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        
-        if (group.numberOfAssets > 0) {
-            NSLog(@"%@", group.description);
-            [group enumerateAssetsUsingBlock:assetEnumerator];
-            [_images reloadData];
-        }
-        
-    } failureBlock:failure];
 
+    [album enumerateAssetsUsingBlock:assetEnumerator];
+}
+
+- (IBAction)backButton:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UICollectionViewDatasorce

@@ -15,4 +15,7 @@ static NSString *const ImagePickerViewControllerSBID = @"ImagePickerVC";
 
 @property (weak, nonatomic) IBOutlet UICollectionView *images;
 
+- (void)loadCollectionWithAlbum:(ALAssetsGroup *)album fromLibrary:(ALAssetsLibrary *)lib;
+- (IBAction)backButton:(id)sender;
+
 @end

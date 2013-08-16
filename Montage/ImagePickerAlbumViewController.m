@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Michael Timbrook. All rights reserved.
 //
 
+#import "ImagePickerViewController.h"
 #import "ImagePickerAlbumViewController.h"
 #import "ImagePickerAlbumCell.h"
 
@@ -19,6 +20,7 @@
 {
     
     _tableView.dataSource = self;
+    _tableView.delegate = self;
     
     _albums = [NSMutableArray new];
     _library = [ALAssetsLibrary new];
@@ -31,6 +33,12 @@
         // Handle lack of photo access here, prompt user to update settings
         NSLog(@"Cannot access photos library");
     }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ImagePickerViewController *dvc = segue.destinationViewController;
+    [dvc loadCollectionWithAlbum:sender fromLibrary:_library];
 }
 
 #pragma mark - TableView
@@ -49,6 +57,11 @@
     cell.imageView.image = [UIImage imageWithCGImage:album.posterImage];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"toImagePicker" sender:_albums[indexPath.row]];
 }
 
 @end

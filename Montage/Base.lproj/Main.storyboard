@@ -86,7 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="AUC-CU-RRY" id="Txj-NR-Max"/>
-                        <segue destination="Rdc-0F-5SA" kind="modal" id="09H-kH-my5"/>
+                        <segue destination="Rdc-0F-5SA" kind="modal" identifier="toImagePicker" id="09H-kH-my5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ynr-uq-cds" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -296,6 +296,21 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Select Images" id="p2O-ea-6vS">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="keY-SU-k7z">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="31x-ec-Q38">
+                                                <rect key="frame" x="16" y="5" width="37" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backButton:" destination="Rdc-0F-5SA" eventType="touchDragInside" id="IZR-7M-tOo"/>
+                                                </connections>
+                                            </button>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="LVw-cS-gfT">
                                             <color key="tintColor" red="0.96577785329999999" green="0.96577785329999999" blue="0.96577785329999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
