@@ -10,6 +10,8 @@
 
 @interface PhotoManager : NSObject <UICollectionViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
+@property (nonatomic) NSArray *photos;
+
 @end
 
 @protocol PhotoManagerDelegate <NSObject>

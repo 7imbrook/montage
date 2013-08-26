@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="13A538g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="13A558" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
@@ -16,60 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AUC-CU-RRY">
-                                <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="90" sectionHeaderHeight="46" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="AUC-CU-RRY">
+                                <rect key="frame" x="0.0" y="22" width="320" height="546"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="album" rowHeight="80" id="aDh-tD-pzI" customClass="ImagePickerAlbumCell">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="80"/>
+                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="album" rowHeight="90" id="aDh-tD-pzI" customClass="ImagePickerAlbumCell">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="aDh-tD-pzI" id="kDv-TY-sai">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALF-q1-4bt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="79"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-M5-KOD">
+                                                    <rect key="frame" x="20" y="5" width="80" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="79" id="PL2-IJ-kU2"/>
-                                                        <constraint firstAttribute="height" constant="79" id="XM2-cv-eBa"/>
-                                                        <constraint firstAttribute="width" constant="79" id="eOw-9Z-BT0"/>
-                                                        <constraint firstAttribute="height" constant="79" id="vkA-KP-fAo"/>
-                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-Sr-PE7">
-                                                    <rect key="frame" x="87" y="29" width="229" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEl-ji-XHd">
+                                                    <rect key="frame" x="108" y="34" width="200" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="229" id="Goq-FM-AS4"/>
-                                                        <constraint firstAttribute="width" constant="229" id="UyE-fp-Ykc"/>
-                                                        <constraint firstAttribute="height" constant="21" id="Y3o-Jn-WeW"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="centerY" secondItem="kDv-TY-sai" secondAttribute="centerY" id="0rc-At-Qvg"/>
-                                                <constraint firstAttribute="bottom" secondItem="ALF-q1-4bt" secondAttribute="bottom" id="3hV-ny-Sk8"/>
-                                                <constraint firstItem="8sU-Sr-PE7" firstAttribute="leading" secondItem="ALF-q1-4bt" secondAttribute="trailing" constant="8" id="6m4-CY-hsw"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="centerY" secondItem="8sU-Sr-PE7" secondAttribute="centerY" id="Eb1-cY-zGZ"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="leading" secondItem="kDv-TY-sai" secondAttribute="leading" id="NLU-Sd-BB4"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="top" secondItem="kDv-TY-sai" secondAttribute="top" id="OVt-8V-yvv"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="leading" secondItem="kDv-TY-sai" secondAttribute="leading" id="PPn-BE-5wQ"/>
-                                                <constraint firstItem="8sU-Sr-PE7" firstAttribute="leading" secondItem="ALF-q1-4bt" secondAttribute="trailing" constant="8" symbolic="YES" id="VsI-Ri-Euy"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="leading" secondItem="kDv-TY-sai" secondAttribute="leading" id="YbU-a6-dSk"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="top" secondItem="kDv-TY-sai" secondAttribute="top" id="bXj-rv-7wU"/>
-                                                <constraint firstAttribute="bottom" secondItem="ALF-q1-4bt" secondAttribute="bottom" id="d6a-Zc-mX0"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="top" secondItem="kDv-TY-sai" secondAttribute="top" id="ddQ-b8-58n"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="leading" secondItem="kDv-TY-sai" secondAttribute="leading" id="gdF-25-EGL"/>
-                                                <constraint firstItem="ALF-q1-4bt" firstAttribute="top" secondItem="kDv-TY-sai" secondAttribute="top" id="sO8-aX-eyb"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="albumImage" destination="ALF-q1-4bt" id="0OR-gi-Vc1"/>
-                                            <outlet property="albumName" destination="8sU-Sr-PE7" id="qml-YL-Ptb"/>
+                                            <outlet property="albumImage" destination="DuY-M5-KOD" id="ofG-KP-Qju"/>
+                                            <outlet property="albumName" destination="wEl-ji-XHd" id="awp-OR-5Cu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C0654CB17BC31A400A5F979 /* ImagePickerAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */; };
+		4C160E0417CAFFAD00285013 /* RenderEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C160E0317CAFFAD00285013 /* RenderEngine.m */; };
 		4CBFBDBA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
 		4CBFBDBC17B598FE00E4614D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */; };
 		4CBFBDBE17B598FE00E4614D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBD17B598FE00E4614D /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		4C0654C917BC31A400A5F979 /* ImagePickerAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerAlbumCell.h; sourceTree = "<group>"; };
 		4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerAlbumCell.m; sourceTree = "<group>"; };
+		4C160E0217CAFFAD00285013 /* RenderEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderEngine.h; sourceTree = "<group>"; };
+		4C160E0317CAFFAD00285013 /* RenderEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderEngine.m; sourceTree = "<group>"; };
 		4CBFBDB617B598FE00E4614D /* Montage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBFBDB917B598FE00E4614D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C160E0117CAFF7A00285013 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				4C160E0217CAFFAD00285013 /* RenderEngine.h */,
+				4C160E0317CAFFAD00285013 /* RenderEngine.m */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
 		4CBFBDAD17B598FE00E4614D = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				4CBFBDF317B59FFF00E4614D /* Managers */,
+				4C160E0117CAFF7A00285013 /* Renderer */,
 				4CBFBDEE17B59C5300E4614D /* Controllers */,
 				4CBFBDC817B598FE00E4614D /* AppDelegate.h */,
 				4CBFBDC917B598FE00E4614D /* AppDelegate.m */,
@@ -318,6 +331,7 @@
 				4CBFBDCA17B598FE00E4614D /* AppDelegate.m in Sources */,
 				4C0654CB17BC31A400A5F979 /* ImagePickerAlbumCell.m in Sources */,
 				4CBFBDF117B59C7900E4614D /* PhotoManager.m in Sources */,
+				4C160E0417CAFFAD00285013 /* RenderEngine.m in Sources */,
 				4CBFBDFC17B5B40100E4614D /* ImagePickerViewController.m in Sources */,
 				4CBFBDC617B598FE00E4614D /* main.m in Sources */,
 				4CBFBDFF17B5B66C00E4614D /* ImagePickerImageCell.m in Sources */,
