@@ -6,7 +6,9 @@
 //  Copyright (c) 2013 Michael Timbrook. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import AssetsLibrary;
+@import AVFoundation;
 #import "PhotoManager.h"
 
 @interface RenderEngine : NSObject
@@ -16,5 +18,11 @@
  * @param manager PhotoManager object to render out
  */
 + (instancetype)rendererWithPhotoManager:(PhotoManager *)manager;
+
+/**
+ * Starts the rendering process
+ * @return success or failure
+ */
+- (BOOL)start;
 
 @end

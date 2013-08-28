@@ -8,6 +8,9 @@
 
 #import <XCTest/XCTest.h>
 
+#import "PhotoManager.h"
+#import "RenderEngine.h"
+
 @interface MontageTests : XCTestCase
 
 @end
@@ -26,9 +29,13 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testRender
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    PhotoManager *photoManager = [PhotoManager new];
+    RenderEngine *render = [RenderEngine rendererWithPhotoManager:photoManager];
+    
+    [render start];
+    
 }
 
 @end
