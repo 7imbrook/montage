@@ -10,6 +10,7 @@
 		4C0654CB17BC31A400A5F979 /* ImagePickerAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */; };
 		4C160E0417CAFFAD00285013 /* RenderEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C160E0317CAFFAD00285013 /* RenderEngine.m */; };
 		4C160E1117CD2B8E00285013 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C160E1017CD2B8E00285013 /* AVFoundation.framework */; };
+		4C160E1617CE642A00285013 /* emmaEmotions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C160E1517CE642A00285013 /* emmaEmotions.jpg */; };
 		4CBFBDBA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
 		4CBFBDBC17B598FE00E4614D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */; };
 		4CBFBDBE17B598FE00E4614D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBD17B598FE00E4614D /* UIKit.framework */; };
@@ -29,6 +30,7 @@
 		4CBFBDFF17B5B66C00E4614D /* ImagePickerImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBDFE17B5B66C00E4614D /* ImagePickerImageCell.m */; };
 		4CBFBE0117B5E0BA00E4614D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBE0017B5E0BA00E4614D /* AssetsLibrary.framework */; };
 		4CBFBE0517B7055B00E4614D /* ImagePickerAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFBE0417B7055B00E4614D /* ImagePickerAlbumViewController.m */; };
+		4CD22D3517CF06AC0004E60B /* emmaEmotions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C160E1517CE642A00285013 /* emmaEmotions.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		4C160E0217CAFFAD00285013 /* RenderEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderEngine.h; sourceTree = "<group>"; };
 		4C160E0317CAFFAD00285013 /* RenderEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderEngine.m; sourceTree = "<group>"; };
 		4C160E1017CD2B8E00285013 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C160E1517CE642A00285013 /* emmaEmotions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = emmaEmotions.jpg; path = MontageTests/emmaEmotions.jpg; sourceTree = SOURCE_ROOT; };
 		4CBFBDB617B598FE00E4614D /* Montage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBFBDB917B598FE00E4614D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -182,6 +185,7 @@
 		4CBFBDDF17B598FE00E4614D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C160E1517CE642A00285013 /* emmaEmotions.jpg */,
 				4CBFBDE017B598FE00E4614D /* MontageTests-Info.plist */,
 				4CBFBDE117B598FE00E4614D /* InfoPlist.strings */,
 			);
@@ -310,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBFBDD217B598FE00E4614D /* Images.xcassets in Resources */,
+				4CD22D3517CF06AC0004E60B /* emmaEmotions.jpg in Resources */,
 				4CBFBDC417B598FE00E4614D /* InfoPlist.strings in Resources */,
 				4CBFBDCD17B598FE00E4614D /* Main.storyboard in Resources */,
 			);
@@ -320,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBFBDE317B598FE00E4614D /* InfoPlist.strings in Resources */,
+				4C160E1617CE642A00285013 /* emmaEmotions.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

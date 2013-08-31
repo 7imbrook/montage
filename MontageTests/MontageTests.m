@@ -7,11 +7,19 @@
 //
 
 #import <XCTest/XCTest.h>
+@import CoreImage;
 
 #import "PhotoManager.h"
 #import "RenderEngine.h"
 
 @interface MontageTests : XCTestCase
+
+@end
+
+@interface RenderEngine ()
+
+- (CVPixelBufferRef)pixelBufferFromCGImage:(CGImageRef)image size:(CGSize)imageSize;
+- (CVPixelBufferRef)pixelBufferFromCGImage:(CGImageRef)image;
 
 @end
 
@@ -35,6 +43,20 @@
     RenderEngine *render = [RenderEngine rendererWithPhotoManager:photoManager];
     
     [render start];
+    
+}
+
+- (void)testPixelBuffer
+{
+    
+    UIImage *testImage = [UIImage imageWithContentsOfFile:@"/Users/michael/Projects/Montage/MontageTests/emmaEmotions.jpg"];
+    CGImageRef img = testImage.CGImage;
+    
+    RenderEngine *test = [RenderEngine new];
+    CVPixelBufferRef buff = [test pixelBufferFromCGImage:img];
+    
+    CIImage *imageTest = [CIImage imageWithCVPixelBuffer:buff];
+    NSLog(@"%@", imageTest);
     
 }
 
