@@ -55,7 +55,12 @@
     RenderEngine *test = [RenderEngine new];
     CVPixelBufferRef buff = [test pixelBufferFromCGImage:img];
     
-    CIImage *imageTest = [CIImage imageWithCVPixelBuffer:buff];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithBool:YES], kCVPixelBufferCGImageCompatibilityKey,
+                             [NSNumber numberWithBool:NO], kCVPixelBufferCGBitmapContextCompatibilityKey,
+                             nil];
+    
+    CIImage *imageTest = [CIImage imageWithCVPixelBuffer:buff options:options];
     NSLog(@"%@", imageTest);
     
 }

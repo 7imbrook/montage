@@ -53,7 +53,7 @@
     [videoWriter startSessionAtSourceTime:kCMTimeZero];
     
     UIImage *img = [UIImage imageNamed:@"emmaEmotions.jpg"];
-    CVPixelBufferRef imgbuff = [self pixelBufferFromCGImage:img.CGImage size:CGSizeMake(640, 640)];
+    CVPixelBufferRef imgbuff = [self pixelBufferFromCGImage:img.CGImage];
     
     BOOL status = [adaptor appendPixelBuffer:imgbuff withPresentationTime:CMTimeMake(24, 2)];
     
@@ -72,49 +72,17 @@
     return YES;
 }
 
-- (CVPixelBufferRef)pixelBufferFromCGImage:(CGImageRef)image size:(CGSize)imageSize
-{
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
-                             [NSNumber numberWithBool:YES], kCVPixelBufferCGImageCompatibilityKey,
-                             [NSNumber numberWithBool:YES], kCVPixelBufferCGBitmapContextCompatibilityKey,
-                             nil];
-    CVPixelBufferRef pxbuffer = NULL;
-    CVReturn status = CVPixelBufferCreate(kCFAllocatorDefault, imageSize.width,
-                                          imageSize.height, kCVPixelFormatType_32ARGB, (__bridge CFDictionaryRef) options,
-                                          &pxbuffer);
-    NSParameterAssert(status == kCVReturnSuccess && pxbuffer != NULL);
-    
-    CVPixelBufferLockBaseAddress(pxbuffer, 0);
-    void *pxdata = CVPixelBufferGetBaseAddress(pxbuffer);
-    NSParameterAssert(pxdata != NULL);
-    
-    CGColorSpaceRef rgbColorSpace = CGColorSpaceCreateDeviceRGB();
-    CGContextRef context = CGBitmapContextCreate(pxdata, imageSize.width,
-                                                 imageSize.height, 8, 4*imageSize.width, rgbColorSpace,
-                                                 kCGImageAlphaNoneSkipFirst);
-    NSParameterAssert(context);
-    //    CGContextConcatCTM(context, frameTransform);
-    CGContextDrawImage(context, CGRectMake(0, 0, CGImageGetWidth(image),
-                                           CGImageGetHeight(image)), image);
-    CGColorSpaceRelease(rgbColorSpace);
-    CGContextRelease(context);
-    
-    CVPixelBufferUnlockBaseAddress(pxbuffer, 0);
-    
-    return pxbuffer;
-}
-
 - (CVPixelBufferRef)pixelBufferFromCGImage:(CGImageRef)image
 {
     
     CGSize frameSize = CGSizeMake(CGImageGetWidth(image), CGImageGetHeight(image));
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
                              [NSNumber numberWithBool:YES], kCVPixelBufferCGImageCompatibilityKey,
-                             [NSNumber numberWithBool:YES], kCVPixelBufferCGBitmapContextCompatibilityKey,
+                             [NSNumber numberWithBool:NO], kCVPixelBufferCGBitmapContextCompatibilityKey,
                              nil];
     CVPixelBufferRef pxbuffer = NULL;
     CVReturn status = CVPixelBufferCreate(kCFAllocatorDefault, frameSize.width,
-                                          frameSize.height,  kCVPixelFormatType_32RGBA, (__bridge CFDictionaryRef) options,
+                                          frameSize.height,  kCVPixelFormatType_128RGBAFloat, (__bridge CFDictionaryRef) options,
                                           &pxbuffer);
 
     NSParameterAssert(status == kCVReturnSuccess && pxbuffer != NULL);
@@ -125,7 +93,7 @@
     CGColorSpaceRef rgbColorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef context = CGBitmapContextCreate(pxdata, frameSize.width,
                                                  frameSize.height, 8, 4*frameSize.width, rgbColorSpace,
-                                                 kCGBitmapAlphaInfoMask);
+                                                 kCGImageAlphaNoneSkipFirst);
     
     CGContextDrawImage(context, CGRectMake(0, 0, CGImageGetWidth(image),
                                            CGImageGetHeight(image)), image);
