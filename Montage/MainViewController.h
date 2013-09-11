@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "PhotoManager.h"
 
+static NSString *const MainViewControllerSBID = @"mainView";
+
 @interface MainViewController : UIViewController <UICollectionViewDelegate, PhotoManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *stage;

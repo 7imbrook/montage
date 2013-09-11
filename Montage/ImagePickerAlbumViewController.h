@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Michael Timbrook. All rights reserved.
 //
 
+static NSString *const ImagePickerAlbumViewControllerSBID = @"imagePick";
+
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 

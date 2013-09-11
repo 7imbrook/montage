@@ -7,12 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "IIViewDeckController.h"
+#import "MainViewController.h"
+#import "ImagePickerAlbumViewController.h"
+
+@import ObjectiveC;
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    MainViewController *mainView = [storyboard instantiateViewControllerWithIdentifier:MainViewControllerSBID];
+    ImagePickerAlbumViewController *imagePick = [storyboard instantiateViewControllerWithIdentifier:ImagePickerAlbumViewControllerSBID];
+    
+    IIViewDeckController *rootView = [[IIViewDeckController alloc] initWithCenterViewController:mainView rightViewController:imagePick];
+    
+    self.window.rootViewController = rootView;
+    
     return YES;
 }
 							
