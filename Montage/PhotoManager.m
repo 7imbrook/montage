@@ -20,8 +20,6 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AddPhoto" forIndexPath:indexPath];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:collectionView.delegate action:@selector(photoManagerAddPhoto:)];
-    [cell addGestureRecognizer:tap];
     return cell;
 }
 

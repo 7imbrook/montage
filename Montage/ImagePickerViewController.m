@@ -8,16 +8,19 @@
 
 #import "ImagePickerViewController.h"
 #import "ImagePickerImageCell.h"
+#import "AppDelegate.h"
 
 @implementation ImagePickerViewController
 {
     NSMutableArray *_assets;
-    __strong ALAssetsLibrary *_library;
+    ALAssetsLibrary *_library;
 }
 
 - (void)viewDidLoad
 {
     _images.dataSource = self;
+    _images.delegate = self;
+    _images.allowsMultipleSelection = YES;
 }
 
 - (void)loadCollectionWithAlbum:(ALAssetsGroup *)album fromLibrary:(ALAssetsLibrary *)lib
@@ -34,11 +37,27 @@
     };
 
     [album enumerateAssetsUsingBlock:assetEnumerator];
+    _assets = [_assets.reverseObjectEnumerator.allObjects mutableCopy];
 }
 
 - (IBAction)backButton:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    AppDelegate *app = [[UIApplication sharedApplication] delegate];
+    [app popViewControllerOnCenter];
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ImagePickerImageCell *cell = (ImagePickerImageCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [cell setAlpha:0.2];    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ImagePickerImageCell *cell = (ImagePickerImageCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [cell setAlpha:1.0];
 }
 
 #pragma mark - UICollectionViewDatasorce

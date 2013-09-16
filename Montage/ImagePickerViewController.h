@@ -11,7 +11,7 @@
 
 static NSString *const ImagePickerViewControllerSBID = @"ImagePickerVC";
 
-@interface ImagePickerViewController : UIViewController <UICollectionViewDataSource>
+@interface ImagePickerViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *images;
 

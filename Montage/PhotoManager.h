@@ -16,6 +16,4 @@
 
 @protocol PhotoManagerDelegate <NSObject>
 
-- (void)photoManagerAddPhoto:(UITapGestureRecognizer *)reg;
-
 @end

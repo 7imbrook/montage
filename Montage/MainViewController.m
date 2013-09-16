@@ -34,14 +34,4 @@
 
 #pragma mark - PhotoManagerDelegate
 
-- (void)photoManagerAddPhoto:(UITapGestureRecognizer *)reg
-{
-    [self performSegueWithIdentifier:@"toPhotoPicker" sender:_photoManager];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Pass Photo manager
-}
-
 @end
