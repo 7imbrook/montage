@@ -11,6 +11,7 @@
 		4C160E0417CAFFAD00285013 /* RenderEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C160E0317CAFFAD00285013 /* RenderEngine.m */; };
 		4C160E1117CD2B8E00285013 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C160E1017CD2B8E00285013 /* AVFoundation.framework */; };
 		4C160E1617CE642A00285013 /* emmaEmotions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C160E1517CE642A00285013 /* emmaEmotions.jpg */; };
+		4C28CEDB17E39C5D00D7BFB2 /* Montage-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CBFBDC117B598FE00E4614D /* Montage-Info.plist */; };
 		4CBFBDBA17B598FE00E4614D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDB917B598FE00E4614D /* Foundation.framework */; };
 		4CBFBDBC17B598FE00E4614D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBB17B598FE00E4614D /* CoreGraphics.framework */; };
 		4CBFBDBE17B598FE00E4614D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBFBDBD17B598FE00E4614D /* UIKit.framework */; };
@@ -341,6 +342,7 @@
 			files = (
 				4CBFBDD217B598FE00E4614D /* Images.xcassets in Resources */,
 				4CD22D3517CF06AC0004E60B /* emmaEmotions.jpg in Resources */,
+				4C28CEDB17E39C5D00D7BFB2 /* Montage-Info.plist in Resources */,
 				4CBFBDC417B598FE00E4614D /* InfoPlist.strings in Resources */,
 				4CBFBDCD17B598FE00E4614D /* Main.storyboard in Resources */,
 			);

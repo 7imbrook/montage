@@ -12,4 +12,14 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+/**
+ * Used to change the center view controller without transition.
+ */
+- (void)switchCenterViewController:(UIViewController *)viewController andClose:(BOOL)close;
+
+/**
+ * Removes layered view controllers with animation
+ */
+- (void)popViewControllerOnCenter;
+
 @end

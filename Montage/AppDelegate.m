@@ -11,22 +11,50 @@
 #import "MainViewController.h"
 #import "ImagePickerAlbumViewController.h"
 
-@import ObjectiveC;
-
 @implementation AppDelegate
+{
+    NSMutableArray *_lastViewControllers;
+    IIViewDeckController *_rootViewDeck;
+}
+
+- (void)switchCenterViewController:(UIViewController *)viewController andClose:(BOOL)close
+{
+    if (_rootViewDeck) {
+        [_lastViewControllers addObject:_rootViewDeck.centerController];
+        [_rootViewDeck setCenterController:viewController];
+        if (close) {
+            [_rootViewDeck closeRightView];
+        }
+    } else abort(); // Just die if nil, remove in production
+}
+
+- (void)popViewControllerOnCenter
+{
+    if (_lastViewControllers.count > 0) {
+        // Will animate
+        UIViewController *last = _lastViewControllers.lastObject;
+        [self switchCenterViewController:last andClose:YES];
+        [_lastViewControllers removeLastObject];
+    }
+}
+
+#pragma mark - System Calls
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     
+    _lastViewControllers = [NSMutableArray new];
+    
+    // Load root
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     MainViewController *mainView = [storyboard instantiateViewControllerWithIdentifier:MainViewControllerSBID];
     ImagePickerAlbumViewController *imagePick = [storyboard instantiateViewControllerWithIdentifier:ImagePickerAlbumViewControllerSBID];
 
-    IIViewDeckController *rootView = [[IIViewDeckController alloc] initWithCenterViewController:mainView rightViewController:imagePick];
+    _rootViewDeck = [[IIViewDeckController alloc] initWithCenterViewController:mainView rightViewController:imagePick];
     
-    self.window.rootViewController = rootView;
+    self.window.rootViewController = _rootViewDeck;
     
     return YES;
 }
