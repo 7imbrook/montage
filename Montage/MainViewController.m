@@ -38,7 +38,8 @@
 
 - (void)didFinishPickingImagesWithArray:(NSArray *)images
 {
-    NSLog(@"%@", images);
+    NSSet *photos = [NSSet setWithArray:images];
+    [_photoManager addPhotos:photos];
 }
 
 @end
