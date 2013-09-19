@@ -126,6 +126,26 @@
 			name = Renderer;
 			sourceTree = "<group>";
 		};
+		4CA0D38517EBA9DE008D248F /* Photo Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				4CDDF69917EB87E400FE34E7 /* PhotoCell.h */,
+				4CDDF69A17EB87E400FE34E7 /* PhotoCell.m */,
+			);
+			name = "Photo Viewer";
+			sourceTree = "<group>";
+		};
+		4CA0D38617EBAA2E008D248F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C0654C917BC31A400A5F979 /* ImagePickerAlbumCell.h */,
+				4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */,
+				4CBFBDFD17B5B66C00E4614D /* ImagePickerImageCell.h */,
+				4CBFBDFE17B5B66C00E4614D /* ImagePickerImageCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		4CBFBDAD17B598FE00E4614D = {
 			isa = PBXGroup;
 			children = (
@@ -216,10 +236,9 @@
 		4CBFBDF217B59FF900E4614D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4CA0D38517EBA9DE008D248F /* Photo Viewer */,
 				4CBFBDCE17B598FE00E4614D /* MainViewController.h */,
 				4CBFBDCF17B598FE00E4614D /* MainViewController.m */,
-				4CDDF69917EB87E400FE34E7 /* PhotoCell.h */,
-				4CDDF69A17EB87E400FE34E7 /* PhotoCell.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -236,15 +255,12 @@
 		4CBFBDF917B5B3E700E4614D /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				4CA0D38617EBAA2E008D248F /* Cells */,
 				4CDDF69817EB81C300FE34E7 /* ImagePickerDelegate.h */,
-				4CBFBDFA17B5B40100E4614D /* ImagePickerViewController.h */,
-				4CBFBDFB17B5B40100E4614D /* ImagePickerViewController.m */,
-				4CBFBDFD17B5B66C00E4614D /* ImagePickerImageCell.h */,
-				4CBFBDFE17B5B66C00E4614D /* ImagePickerImageCell.m */,
 				4CBFBE0317B7055B00E4614D /* ImagePickerAlbumViewController.h */,
 				4CBFBE0417B7055B00E4614D /* ImagePickerAlbumViewController.m */,
-				4C0654C917BC31A400A5F979 /* ImagePickerAlbumCell.h */,
-				4C0654CA17BC31A400A5F979 /* ImagePickerAlbumCell.m */,
+				4CBFBDFA17B5B40100E4614D /* ImagePickerViewController.h */,
+				4CBFBDFB17B5B40100E4614D /* ImagePickerViewController.m */,
 			);
 			name = ImagePicker;
 			sourceTree = "<group>";

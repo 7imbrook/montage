@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>61F5B674-2E8E-4AE6-A3CA-B2BA8CA7EF57</string>
+	<string>F16F83D9-F5A6-4B85-A101-248B34BC5805</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Montage</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F24D2BFE-E15A-44D8-8ACE-DED62521F1FE</key>
-		<string>https://github.com/7imbrook/montage.git</string>
+		<key>EF760ED5-4C7F-454D-91BA-157BC9CAD1A8</key>
+		<string>ssh://github.com/7imbrook/montage.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Montage.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F24D2BFE-E15A-44D8-8ACE-DED62521F1FE</key>
+		<key>EF760ED5-4C7F-454D-91BA-157BC9CAD1A8</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/7imbrook/montage.git</string>
+	<string>ssh://github.com/7imbrook/montage.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F24D2BFE-E15A-44D8-8ACE-DED62521F1FE</string>
+	<string>EF760ED5-4C7F-454D-91BA-157BC9CAD1A8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F24D2BFE-E15A-44D8-8ACE-DED62521F1FE</string>
+			<string>EF760ED5-4C7F-454D-91BA-157BC9CAD1A8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Montage</string>
 		</dict>
