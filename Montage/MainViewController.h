@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotoManager.h"
+#import "ImagePickerDelegate.h"
 
 static NSString *const MainViewControllerSBID = @"mainView";
 
-@interface MainViewController : UIViewController <UICollectionViewDelegate, PhotoManagerDelegate>
+@interface MainViewController : UIViewController <UICollectionViewDelegate, PhotoManagerDelegate, ImagePickerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *stage;
 @property (weak, nonatomic) IBOutlet UICollectionView *imageCollection;

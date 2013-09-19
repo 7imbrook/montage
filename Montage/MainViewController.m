@@ -34,4 +34,11 @@
 
 #pragma mark - PhotoManagerDelegate
 
+#pragma mark - ImagePickerDelegate
+
+- (void)didFinishPickingImagesWithArray:(NSArray *)images
+{
+    NSLog(@"%@", images);
+}
+
 @end

@@ -52,6 +52,8 @@
     MainViewController *mainView = [storyboard instantiateViewControllerWithIdentifier:MainViewControllerSBID];
     ImagePickerAlbumViewController *imagePick = [storyboard instantiateViewControllerWithIdentifier:ImagePickerAlbumViewControllerSBID];
 
+    imagePick.delegate = mainView;
+    
     _rootViewDeck = [[IIViewDeckController alloc] initWithCenterViewController:mainView rightViewController:imagePick];
     
     self.window.rootViewController = _rootViewDeck;

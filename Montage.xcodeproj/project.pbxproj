@@ -81,6 +81,7 @@
 		4CBFBE0017B5E0BA00E4614D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		4CBFBE0317B7055B00E4614D /* ImagePickerAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerAlbumViewController.h; sourceTree = "<group>"; };
 		4CBFBE0417B7055B00E4614D /* ImagePickerAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerAlbumViewController.m; sourceTree = "<group>"; };
+		4CDDF69817EB81C300FE34E7 /* ImagePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerDelegate.h; sourceTree = "<group>"; };
 		4CFC572817DA5A3900393A1E /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
 		4CFC572917DA5A3900393A1E /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
 		4CFC572A17DA5A3900393A1E /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		4CBFBDF917B5B3E700E4614D /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				4CDDF69817EB81C300FE34E7 /* ImagePickerDelegate.h */,
 				4CBFBDFA17B5B40100E4614D /* ImagePickerViewController.h */,
 				4CBFBDFB17B5B40100E4614D /* ImagePickerViewController.m */,
 				4CBFBDFD17B5B66C00E4614D /* ImagePickerImageCell.h */,

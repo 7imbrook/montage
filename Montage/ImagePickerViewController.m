@@ -51,7 +51,12 @@
 - (IBAction)doneButton:(id)sender
 {
     
+    if ([_delegate respondsToSelector:@selector(didFinishPickingImagesWithArray:)]) {
+        [_delegate didFinishPickingImagesWithArray:_selectedAssets];
+    }
     
+    AppDelegate *app = [[UIApplication sharedApplication] delegate];
+    [app popViewControllerOnCenter];
     
 }
 

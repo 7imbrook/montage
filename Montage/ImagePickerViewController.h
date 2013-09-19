@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImagePickerDelegate.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 static NSString *const ImagePickerViewControllerSBID = @"ImagePickerVC";
@@ -18,5 +19,7 @@ static NSString *const ImagePickerViewControllerSBID = @"ImagePickerVC";
 - (void)loadCollectionWithAlbum:(ALAssetsGroup *)album fromLibrary:(ALAssetsLibrary *)lib;
 - (IBAction)backButton:(id)sender;
 - (IBAction)doneButton:(id)sender;
+
+@property (strong, nonatomic) id<ImagePickerDelegate> delegate;
 
 @end

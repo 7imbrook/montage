@@ -58,6 +58,7 @@
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ImagePickerViewController *dvc = [storyboard instantiateViewControllerWithIdentifier:ImagePickerViewControllerSBID];
+    dvc.delegate = _delegate;
     [dvc loadCollectionWithAlbum:_albums[indexPath.row] fromLibrary:_library];
     
     AppDelegate *app = [[UIApplication sharedApplication] delegate];
