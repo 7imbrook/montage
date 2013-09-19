@@ -17,5 +17,6 @@ static NSString *const ImagePickerViewControllerSBID = @"ImagePickerVC";
 
 - (void)loadCollectionWithAlbum:(ALAssetsGroup *)album fromLibrary:(ALAssetsLibrary *)lib;
 - (IBAction)backButton:(id)sender;
+- (IBAction)doneButton:(id)sender;
 
 @end

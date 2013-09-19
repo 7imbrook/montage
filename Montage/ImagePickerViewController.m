@@ -14,6 +14,7 @@
 {
     NSMutableArray *_assets;
     ALAssetsLibrary *_library;
+    NSMutableArray *_selectedAssets;
 }
 
 - (void)viewDidLoad
@@ -21,6 +22,7 @@
     _images.dataSource = self;
     _images.delegate = self;
     _images.allowsMultipleSelection = YES;
+    _selectedAssets = [NSMutableArray new];
 }
 
 - (void)loadCollectionWithAlbum:(ALAssetsGroup *)album fromLibrary:(ALAssetsLibrary *)lib
@@ -46,17 +48,26 @@
     [app popViewControllerOnCenter];
 }
 
+- (IBAction)doneButton:(id)sender
+{
+    
+    
+    
+}
+
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ImagePickerImageCell *cell = (ImagePickerImageCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [cell setAlpha:0.2];    
+    [_selectedAssets addObject:_assets[indexPath.row]];
+    [cell setAlpha:0.2];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ImagePickerImageCell *cell = (ImagePickerImageCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [_selectedAssets removeObject:_assets[indexPath.row]];
     [cell setAlpha:1.0];
 }
 
